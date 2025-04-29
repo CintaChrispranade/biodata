@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-gray-800">Caccooffee & Bakery</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#features" class="text-gray-600 hover:text-blue-500">Instagram</a></li>
+                    <li><a href="#about" class="text-gray-600 hover:text-blue-500">About</a></li>
+                    <li><a href="#contact" class="text-gray-600 hover:text-blue-500">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="bg-pink-300 text-white py-20">
+            <div class="container mx-auto text-center">
+                <h2 class="text-5xl font-bold mb-4">Hello, CaccoFams!</h2>
+                <p class="text-xl mb-6">Thanks for stopping by! At Caccoffee & Bakery, we believe great days start with good coffee and fresh bread. Take a look around and find something you'll love.</p>
+                <a href="#features" class="bg-white text-pink-500 px-6 py-3 rounded-full shadow-md hover:bg-gray-100">Learn More</a>
+            </div>
+        </section>
+
+        <section id="features" class="py-16">
+            <div class="container mx-auto text-center">
+                <h3 class="text-3xl font-bold mb-8">Freshly Baked & Brewed Just for You</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="text-xl font-bold mb-2">Og' Brownies</h4>
+						<center>
+						<p><img src=https://i.pinimg.com/736x/49/c1/3f/49c13fd20dd55a4b39f683c082435634.jpg></p>
+						<br>
+						<p class="text-lg font-bold">Price</p>
+                        <p class="text-lg font-bold">Rp 20.000/3pcs</p>
+						<br>
+						"Indulge in the rich, chocolatey goodness of Og' Brownies — a classic treat with a modern twist that will keep you coming back for more! Made with premium chocolate and carefully selected ingredients, these brownies offer a fudgy center with a slightly crisp edge for the perfect bite."</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="text-xl font-bold mb-2">Chocolate Chips Cookies</h4>
+						<center>
+						<p><img src=https://i.pinimg.com/736x/5f/da/a0/5fdaa03aa9162110ea8faa8231b8ff9d.jpg></p>
+                        <p>Details about another fantastic feature.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="text-xl font-bold mb-2">Banana Choco Muffins</h4>
+						<center>
+						<p><img src=https://i.pinimg.com/736x/29/a7/89/29a789d59f4dd83d28dbd646eea01344.jpg></p>
+                        <p>Description of what makes this feature great.</p>
+                    </div>
+					<div class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="text-xl font-bold mb-2">Salted Caramel Latte</h4>
+						<center>
+						<p><img src=https://i.pinimg.com/736x/3e/27/d1/3e27d1873811b7903b2fbe5e3ae8299c.jpg></p>
+                        <p>Explanation of this amazing feature.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="text-xl font-bold mb-2">Tiramisu Latte</h4>
+						<center>
+						<p><img src=https://i.pinimg.com/736x/97/db/c5/97dbc5616a99b16141ac1b52d133c939.jpg></p>
+                        <p>Details about another fantastic feature.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="text-xl font-bold mb-2">Hazelnut Latte</h4>
+						<center>
+						<p><img src=https://i.pinimg.com/736x/46/e1/81/46e181977bf450e43c0ce72ad3ecf0e1.jpg></p>
+                        <p>Description of what makes this feature great.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="bg-gray-50 py-16">
+            <div class="container mx-auto text-center">
+                <h3 class="text-3xl font-bold mb-8">About Us</h3>
+                <p class="max-w-2xl mx-auto">We are a company dedicated to providing top-notch solutions for businesses worldwide. Our team of experts ensures that you get the best services tailored to your needs.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="py-16">
+            <div class="container mx-auto text-center">
+                <h3 class="text-3xl font-bold mb-8">Contact Us</h3>
+                <form action="http://localhost/submit.php" method="POST" class="max-w-lg mx-auto">
+                    <div class="mb-4">
+                        <label for="name" class="block text-left font-bold">Name</label>
+                        <input type="text" id="name" name="name" class="w-full p-2 border rounded-lg" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-left font-bold">Email</label>
+                        <input type="email" id="email" name="email" class="w-full p-2 border rounded-lg" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-left font-bold">Message</label>
+                        <textarea id="message" name="message" rows="5" class="w-full p-2 border rounded-lg" required></textarea>
+                    </div>
+                    <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 BrandName. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
