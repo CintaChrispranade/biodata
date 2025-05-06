@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu - Caccoffee & Bakery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .heading-font {
+            font-family: 'Playfair Display', serif;
+        }
+        .pink-gradient {
+            background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 50%, #f48fb1 100%);
+        }
+        .pink-shadow {
+            box-shadow: 0 10px 30px -10px rgba(244, 143, 177, 0.5);
+        }
+        .menu-category {
+            scroll-margin-top: 100px;
+        }
+    </style>
+</head>
+<body class="bg-pink-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold text-pink-500 heading-font">Caccoffee & Bakery</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="landing.html" class="text-gray-600 hover:text-pink-500 transition">Home</a>
+                    <a href="menu.html" class="text-pink-500 font-medium">Menu</a>
+                    <a href="about.html" class="text-gray-600 hover:text-pink-500 transition">About</a>
+                </div>
+                <button class="md:hidden focus:outline-none">
+                    <svg class="w-6 h-6 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Menu Hero -->
+    <div class="pink-gradient py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-white heading-font mb-4">Our Delicious Menu</h1>
+            <p class="text-xl text-pink-100 max-w-2xl mx-auto">Indulge in our artisanal desserts and specialty coffee creations</p>
+        </div>
+    </div>
+
+    <!-- Menu Navigation -->
+    <div class="bg-white sticky top-16 z-40 shadow-sm">
+        <div class="container mx-auto px-6">
+            <div class="flex overflow-x-auto py-4 space-x-6 hide-scrollbar">
+                <a href="#coffee" class="whitespace-nowrap px-4 py-2 rounded-full bg-pink-100 text-pink-700 font-medium">Coffee</a>
+                <a href="#pastries" class="whitespace-nowrap px-4 py-2 rounded-full hover:bg-pink-100 hover:text-pink-700 transition">Pastries</a>
+                <a href="#cakes" class="whitespace-nowrap px-4 py-2 rounded-full hover:bg-pink-100 hover:text-pink-700 transition">Cakes</a>
+                <a href="#desserts" class="whitespace-nowrap px-4 py-2 rounded-full hover:bg-pink-100 hover:text-pink-700 transition">Desserts</a>
+                <a href="#seasonal" class="whitespace-nowrap px-4 py-2 rounded-full hover:bg-pink-100 hover:text-pink-700 transition">Seasonal Specials</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu Content -->
+    <section class="container mx-auto px-6 py-16">
+        <!-- Coffee Section -->
+        <div id="coffee" class="menu-category mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-pink-700 heading-font mb-2">Coffee</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Our specialty coffee beans are ethically sourced and freshly roasted</p>
+                <div class="w-24 h-1 bg-pink-300 mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Coffee Item 1 -->
+                <div class="bg-white rounded-xl p-6 flex items-start pink-shadow hover:scale-[1.02] transition duration-300">
+                    <div class="w-24 h-24 rounded-lg overflow-hidden mr-6 flex-shrink-0">
+                        <img src="https://i.pinimg.com/736x/10/2e/68/102e68f0f0bc8a26695a6fef3f7754f2.jpg" 
+                             alt="Caccocino" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-xl font-semibold text-pink-700 heading-font">Caccocino</h3>
+                            <span class="text-pink-600 font-medium">Rp 35k</span>
+                        </div>
+                        <p class="text-gray-600 mt-2">Our signature creamy cappuccino with a hint of caramel and cinnamon</p>
+                    </div>
+                </div>
+
+                <!-- Coffee Item 2 -->
+                <div class="bg-white rounded-xl p-6 flex items-start pink-shadow hover:scale-[1.02] transition duration-300">
+                    <div class="w-24 h-24 rounded-lg overflow-hidden mr-6 flex-shrink-0">
+                        <img src="https://i.pinimg.com/736x/24/f6/80/24f680877ed877d26904e8170c46fa22.jpg" 
+                             alt="Pink Latte" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-xl font-semibold text-pink-700 heading-font">Pink Latte</h3>
+                            <span class="text-pink-600 font-medium">Rp 40k</span>
+                        </div>
+                        <p class="text-gray-600 mt-2">Beautiful beetroot latte with rose petals and honey</p>
+                    </div>
+                </div>
+
+                <!-- Coffee Item 3 -->
+                <div class="bg-white rounded-xl p-6 flex items-start pink-shadow hover:scale-[1.02] transition duration-300">
+                    <div class="w-24 h-24 rounded-lg overflow-hidden mr-6 flex-shrink-0">
+                        <img src="https://i.pinimg.com/736x/0c/34/75/0c347502157edb29d949b62e178148e2.jpg" 
+                             alt="Iced Vanilla Coffee" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-xl font-semibold text-pink-700 heading-font">Iced Vanilla Coffee</h3>
+                            <span class="text-pink-600 font-medium">Rp 45k</span>
+                        </div>
+                        <p class="text-gray-600 mt-2">Cold brew coffee with homemade vanilla syrup and milk</p>
+                    </div>
+                </div>
+
+                <!-- Coffee Item 4 -->
+                <div class="bg-white rounded-xl p-6 flex items-start pink-shadow hover:scale-[1.02] transition duration-300">
+                    <div class="w-24 h-24 rounded-lg overflow-hidden mr-6 flex-shrink-0">
+                        <img src="https://i.pinimg.com/736x/b5/31/55/b531556d72f8157d4f5000c64db83eb0.jpg" 
+                             alt="Mocha Dream" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-xl font-semibold text-pink-700 heading-font">Mocha Dream</h3>
+                            <span class="text-pink-600 font-medium">Rp 50k</span>
+                        </div>
+                        <p class="text-gray-600 mt-2">Rich chocolate and espresso blend topped with whipped cream</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pastries Section -->
+        <div id="pastries" class="menu-category mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-pink-700 heading-font mb-2">Pastries</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Freshly baked every morning using traditional techniques</p>
+                <div class="w-24 h-1 bg-pink-300 mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Pastry Item 1 -->
+                <div class="bg-white rounded-xl p-6 flex items-start pink-shadow hover:scale-[1.02] transition duration-300">
+                    <div class="w-24 h-24 rounded-lg overflow-hidden mr-6 flex-shrink-0">
+                        <img src="https://i.pinimg.com/736x/5f/43/e0/5f43e026750808a93c350b0b62cb8179.jpg" 
+                             alt="Almond Croissant" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-xl font-semibold text-pink-700 heading-font">Almond Croissant</h3>
+                            <span class="text-pink-600 font-medium">Rp 45k</span>
+                        </div>
+                        <p class="text-gray-600 mt-2">Buttery croissant filled with almond cream and topped with sliced almonds</p>
+                    </div>
+                </div>
+
+                <!-- Pastry Item 2 -->
+                <div class="bg-white rounded-xl p-6 flex items-start pink-shadow hover:scale-[1.02] transition duration-300">
+                    <div class="w-24 h-24 rounded-lg overflow-hidden mr-6 flex-shrink-0">
+                        <img src="https://i.pinimg.com/736x/6c/f2/03/6cf203bc09b5615f4b74dbb4588f1331.jpg" 
+                             alt="Pain au Chocolat" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-xl font-semibold text-pink-700 heading-font">Pain au Chocolat</h3>
+                            <span class="text-pink-600 font-medium">Rp 40k</span>
+                        </div>
+                        <p class="text-gray-600 mt-2">Classic French pastry with premium dark chocolate</p>
+                    </div>
+                </div>
+
+                <!-- Pastry Item 3 -->
+                <div class="bg-white rounded-xl p-6 flex items-start pink-shadow hover:scale-[1.02] transition duration-300">
+                    <div class="w-24 h-24 rounded-lg overflow-hidden mr-6 flex-shrink-0">
+                        <img src="https://i.pinimg.com/736x/b9/a1/bd/b9a1bda94972e50db3e48b5da8c3b4f4.jpg" 
+                             alt="Cinnamon Roll" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-xl font-semibold text-pink-700 heading-font">Cinnamon Roll</h3>
+                            <span class="text-pink-600 font-medium">Rp 35k</span>
+                        </div>
+                        <p class="text-gray-600 mt-2">Soft dough with cinnamon sugar filling and cream cheese frosting</p>
+                    </div>
+                </div>
+
+                <!-- Pastry Item 4 -->
+                <div class="bg-white rounded-xl p-6 flex items-start pink-shadow hover:scale-[1.02] transition duration-300">
+                    <div class="w-24 h-24 rounded-lg overflow-hidden mr-6 flex-shrink-0">
+                        <img src="https://i.pinimg.com/736x/b2/e7/1c/b2e71cfd279601668d10204951df011e.jpg" 
+                             alt="Raspberry Danish" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-xl font-semibold text-pink-700 heading-font">Raspberry Danish</h3>
+                            <span class="text-pink-600 font-medium">Rp 42k</span>
+                        </div>
+                        <p class="text-gray-600 mt-2">Flaky pastry with raspberry jam and vanilla glaze</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cakes Section -->
+        <div id="cakes" class="menu-category mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-pink-700 heading-font mb-2">Cakes</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Available by slice or whole cake (order 24h in advance)</p>
+                <div class="w-24 h-1 bg-pink-300 mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Cake Item 1 -->
+                <div class="bg-white rounded-xl p-6 flex items-start pink-shadow hover:scale-[1.02] transition duration-300">
+                    <div class="w-24 h-24 rounded-lg overflow-hidden mr-6 flex-shrink-0">
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" 
+                             alt="Chocolate Decadence" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-xl font-semibold text-pink-700 heading-font">Chocolate Decadence</h3>
+                            <span class="text-pink-600 font-medium">Rp 65k/slice</span>
+                        </div>
+                        <p class="text-gray-600 mt-2">Four layers of rich chocolate cake with ganache and chocolate mousse</p>
+                    </div>
+                </div>
+
+                <!-- Cake Item 2 -->
+                <div class="bg-white rounded-xl p-6 flex items-start pink-shadow hover:scale-[1.02] transition duration-300">
+                    <div class="w-24 h-24 rounded-lg overflow-hidden mr-6 flex-shrink-0">
+                        <img src="https://i.pinimg.com/736x/f4/18/a9/f418a95b6cf544286ea4bfdb47d38e1e.jpg" 
+                             alt="Strawberry Shortcake" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-xl font-semibold text-pink-700 heading-font">Strawberry Shortcake</h3>
+                            <span class="text-pink-600 font-medium">Rp 55k/slice</span>
+                        </div>
+                        <p class="text-gray-600 mt-2">Light vanilla sponge with fresh strawberries and whipped cream</p>
+                    </div>
+                </div>
+
+                <!-- Cake Item 3 -->
+                <div class="bg-white rounded-xl p-6 flex items-start pink-shadow hover:scale-[1.02] transition duration-300">
+                    <div class="w-24 h-24 rounded-lg overflow-hidden mr-6 flex-shrink-0">
+                        <img src="https://i.pinimg.com/736x/df/36/87/df36871a5651b8051ff9ce858dff3e4e.jpg" 
+                             alt="Red Velvet Cake" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-xl font-semibold text-pink-700 heading-font">Red Velvet Cake</h3>
+                            <span class="text-pink-600 font-medium">Rp 60k/slice</span>
+                        </div>
+                        <p class="text-gray-600 mt-2">Classic red velvet with cream cheese frosting and raspberry coulis</p>
+                    </div>
+                </div>
+
+                <!-- Cake Item 4 -->
+                <div class="bg-white rounded-xl p-6 flex items-start pink-shadow hover:scale-[1.02] transition duration-300">
+                    <div class="w-24 h-24 rounded-lg overflow-hidden mr-6 flex-shrink-0">
+                        <img src="https://i.pinimg.com/736x/c9/1a/bd/c91abd48783bea6fac8b58fa9d5d12f5.jpg" 
+                             alt="Matcha Mousse Cake" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-xl font-semibold text-pink-700 heading-font">Matcha Mousse Cake</h3>
+                            <span class="text-pink-600 font-medium">Rp 70k/slice</span>
+                        </div>
+                        <p class="text-gray-600 mt-2">Layers of matcha sponge, white chocolate mousse, and red bean paste</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Desserts Section -->
+        <div id="desserts" class="menu-category mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-pink-700 heading-font mb-2">Desserts</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Perfect sweet endings to your meal</p>
+                <div class="w-24 h-1 bg-pink-300 mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Dessert Item 1 -->
+                <div class="bg-white rounded-xl p-6 flex items-start pink-shadow hover:scale-[1.02] transition duration-300">
+                    <div class="w-24 h-24 rounded-lg overflow-hidden mr-6 flex-shrink-0">
+                        <img src="https://i.pinimg.com/736x/7b/c4/3f/7bc43fc0f31ac46e14eee77cabf01be1.jpg" 
+                             alt="Crème Brûlée" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-xl font-semibold text-pink-700 heading-font">Crème Brûlée</h3>
+                            <span class="text-pink-600 font-medium">Rp 50k</span>
+                        </div>
+                        <p class="text-gray-600 mt-2">Classic vanilla bean custard with caramelized sugar crust</p>
+                    </div>
+                </div>
+
+                <!-- Dessert Item 2 -->
+                <div class="bg-white rounded-xl p-6 flex items-start pink-shadow hover:scale-[1.02] transition duration-300">
+                    <div class="w-24 h-24 rounded-lg overflow-hidden mr-6 flex-shrink-0">
+                        <img src="https://i.pinimg.com/736x/32/1c/64/321c64a91db8ef9666696a64dcd6877b.jpg" 
+                             alt="Tiramisu" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-xl font-semibold text-pink-700 heading-font">Tiramisu</h3>
+                            <span class="text-pink-600 font-medium">Rp 55k</span>
+                        </div>
+                        <p class="text-gray-600 mt-2">Layers of coffee-soaked ladyfingers and mascarpone cream</p>
+                    </div>
+                </div>
+
+                <!-- Dessert Item 3 -->
+                <div class="bg-white rounded-xl p-6 flex items-start pink-shadow hover:scale-[1.02] transition duration-300">
+                    <div class="w-24 h-24 rounded-lg overflow-hidden mr-6 flex-shrink-0">
+                        <img src="https://i.pinimg.com/736x/cc/3c/64/cc3c648a9a8e8734e705c063e3289e93.jpg" 
+                             alt="Macaron Assortment" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-xl font-semibold text-pink-700 heading-font">Macaron Assortment</h3>
+                            <span class="text-pink-600 font-medium">Rp 75k/6pcs</span>
+                        </div>
+                        <p class="text-gray-600 mt-2">Selection of flavors: raspberry, pistachio, vanilla, chocolate, salted caramel</p>
+                    </div>
+                </div>
+
+                <!-- Dessert Item 4 -->
+                <div class="bg-white rounded-xl p-6 flex items-start pink-shadow hover:scale-[1.02] transition duration-300">
+                    <div class="w-24 h-24 rounded-lg overflow-hidden mr-6 flex-shrink-0">
+                        <img src="https://i.pinimg.com/736x/af/9a/a0/af9aa068bd53e2b729a02f672584ef3c.jpg" 
+                             alt="Chocolate Lava Cake" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-xl font-semibold text-pink-700 heading-font">Chocolate Lava Cake</h3>
+                            <span class="text-pink-600 font-medium">Rp 60k</span>
+                        </div>
+                        <p class="text-gray-600 mt-2">Warm chocolate cake with molten center, served with vanilla ice cream</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seasonal Specials -->
+        <div id="seasonal" class="menu-category">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-pink-700 heading-font mb-2">Seasonal Specials</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Limited-time offerings that celebrate the flavors of the season</p>
+                <div class="w-24 h-1 bg-pink-300 mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Seasonal Item 1 -->
+                <div class="bg-white rounded-xl p-6 flex items-start pink-shadow hover:scale-[1.02] transition duration-300">
+                    <div class="w-24 h-24 rounded-lg overflow-hidden mr-6 flex-shrink-0">
+                        <img src="https://i.pinimg.com/736x/86/75/b4/8675b4652109f2cc7e6e0402da3e9331.jpg" 
+                             alt="Pumpkin Spice Latte" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-xl font-semibold text-pink-700 heading-font">Pumpkin Spice Latte</h3>
+                            <span class="text-pink-600 font-medium">Rp 45k</span>
+                        </div>
+                        <p class="text-gray-600 mt-2">Seasonal favorite with real pumpkin and autumn spices</p>
+                    </div>
+                </div>
+
+                <!-- Seasonal Item 2 -->
+                <div class="bg-white rounded-xl p-6 flex items-start pink-shadow hover:scale-[1.02] transition duration-300">
+                    <div class="w-24 h-24 rounded-lg overflow-hidden mr-6 flex-shrink-0">
+                        <img src="https://i.pinimg.com/736x/5f/f8/83/5ff8833966754b45d38ad4250a7ebd9f.jpg" 
+                             alt="Peppermint Mocha" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-xl font-semibold text-pink-700 heading-font">Peppermint Mocha</h3>
+                            <span class="text-pink-600 font-medium">Rp 50k</span>
+                        </div>
+                        <p class="text-gray-600 mt-2">Festive blend of chocolate, espresso and peppermint</p>
+                    </div>
+                </div>
+
+                <!-- Seasonal Item 3 -->
+                <div class="bg-white rounded-xl p-6 flex items-start pink-shadow hover:scale-[1.02] transition duration-300">
+                    <div class="w-24 h-24 rounded-lg overflow-hidden mr-6 flex-shrink-0">
+                        <img src="https://i.pinimg.com/736x/6d/26/ae/6d26ae686db8becf16a76f969f8af6c1.jpg" 
+                             alt="Mango Sticky Rice Cake" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-xl font-semibold text-pink-700 heading-font">Mango Sticky Rice Cake</h3>
+                            <span class="text-pink-600 font-medium">Rp 65k</span>
+                        </div>
+                        <p class="text-gray-600 mt-2">Tropical twist on classic sticky rice with coconut and fresh mango</p>
+                    </div>
+                </div>
+
+                <!-- Seasonal Item 4 -->
+                <div class="bg-white rounded-xl p-6 flex items-start pink-shadow hover:scale-[1.02] transition duration-300">
+                    <div class="w-24 h-24 rounded-lg overflow-hidden mr-6 flex-shrink-0">
+                        <img src="https://i.pinimg.com/736x/41/5a/5d/415a5d1494cddca9c80b04d037a19512.jpg" 
+                             alt="Berry Pavlova" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-xl font-semibold text-pink-700 heading-font">Berry Pavlova</h3>
+                            <span class="text-pink-600 font-medium">Rp 55k</span>
+                        </div>
+                        <p class="text-gray-600 mt-2">Crisp meringue with whipped cream and seasonal berries</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <div class="pink-gradient py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white heading-font mb-6">Ready to Order?</h2>
+            <p class="text-xl text-pink-100 max-w-2xl mx-auto mb-8">Visit us in-store or order online for pickup/delivery</p>
+            <a href="contact.html" class="inline-block bg-white text-pink-600 px-8 py-3 rounded-lg font-medium hover:bg-pink-50 transition duration-300">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-pink-900 text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-10">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 heading-font">Caccoffee & Bakery</h3>
+                    <p class="text-pink-200">Sweet moments crafted with love and served with perfection.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 heading-font">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="landing.html" class="text-pink-200 hover:text-white transition">Home</a></li>
+                        <li><a href="menu.html" class="text-pink-200 hover:text-white transition">Menu</a></li>
+                        <li><a href="about.html" class="text-pink-200 hover:text-white transition">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 heading-font">Contact</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mt-1 mr-3 text-pink-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <span class="text-pink-200">Jalan Tunjungan No. 15-16, Surabaya</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mt-1 mr-3 text-pink-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                            <span class="text-pink-200">+62 896 8710 8845</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mt-1 mr-3 text-pink-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                            <span class="text-pink-200">hello@caccoffee.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 heading-font">Hours</h4>
+                    <ul class="space-y-2 text-pink-200">
+                        <li class="flex justify-between">
+                            <span>Monday-Friday</span>
+                            <span>7am-7pm</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Saturday</span>
+                            <span>8am-8pm</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Sunday</span>
+                            <span>9am-6pm</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-pink-800 mt-12 pt-8 text-center text-pink-300">
+                <p>&copy; 2023 Caccoffee & Bakery. All rights reserved.</p>
+                <p class="mt-2">Crafted with love by Cinta Chrispranade</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
